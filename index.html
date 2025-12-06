@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete MyPetBook Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #555;
+    }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    ul {
+      margin-top: 10px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Delete Your MyPetBook Account</h1>
+    <p>If you would like to delete your MyPetBook account and associated data, please follow the steps below:</p>
+
+    <ul>
+      <li>Open the MyPetBook app and log in with your account.</li>
+      <li>Go to <strong>Settings &gt; Account &gt; Delete Account</strong>.</li>
+      <li>Confirm your decision to delete your account.</li>
+      <li>Once confirmed, the app will send a request to our server to delete your account using the following endpoint:
+        <br><code>https://auth-service.mypetbook.app/api/auth/delete-user/{userId}</code>
+      </li>
+      <li>All personal data including your profile, pets, appointments, and posts will be permanently deleted.</li>
+      <li>Some data may be retained for legal or operational purposes as required.</li>
+    </ul>
+
+    <p>The deletion process may take up to <strong>7 days</strong> to fully complete. Once processed, your account cannot be recovered.</p>
+
+    <p>If you encounter any issues, please contact our support team at <a href="mailto:support@mypetbook.com">support@mypetbook.com</a>.</p>
+  </div>
+</body>
+</html>
